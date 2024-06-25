@@ -24,7 +24,3 @@ Evaluation data can be found at data/test.csv
 Precision: 0.625158831003812
 Recall: 0.312579415501906
 Fbeta: 0.4167725540025413
-
-## Ethical Considerations
-
-## Caveats and Recommendations
