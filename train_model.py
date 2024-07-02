@@ -2,7 +2,8 @@
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
-
+import pickle
+import os
 from ml.data import process_data
 from ml.model import save_model_pickle, train_model, evaluate_slice, inference, compute_model_metrics
 
@@ -26,6 +27,11 @@ cat_features = [
 X_train, y_train, encoder, lb = process_data(
     train, categorical_features=cat_features, label="salary", training=True
 )
+# Save encoder and lb
+with open(os.path.join('model', 'encoder.pkl'), 'wb') as encoder_file:
+    pickle.dump(encoder, encoder_file)
+with open(os.path.join('model', 'label_binarizer.pkl'), 'wb') as lb_file:
+    pickle.dump(lb, lb_file)
 train.to_csv("data/train.csv", index=False)
 
 # Proces the test data with the process_data function.

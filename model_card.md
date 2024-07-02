@@ -21,6 +21,6 @@ Evaluation data can be found at data/test.csv
 
 ## Metrics
 
-Precision: 0.625158831003812
-Recall: 0.312579415501906
-Fbeta: 0.4167725540025413
+Precision: 0.6962025316455697
+Recall: 0.24475524475524477
+Fbeta: 0.36218250235183447
