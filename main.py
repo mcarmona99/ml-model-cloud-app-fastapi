@@ -94,4 +94,5 @@ def predict(request: InferenceBody) -> dict:
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    # Using port 10000 for Render web service
+    uvicorn.run(app, host="0.0.0.0", port=10000)
