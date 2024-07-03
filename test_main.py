@@ -31,7 +31,7 @@ invalid_test_cases = [
     ({"age": "invalid", "workclass": "Private", "fnlgt": 484024, "education": "HS-grad", "education-num": 9,
       "marital-status": "Divorced", "occupation": "Machine-op-inspct", "relationship": "Unmarried", "race": "White",
       "sex": "Male", "capital-gain": 0, "capital-loss": 0, "hours-per-week": 40, "native-country": "United-States"}),
-    ({"age": 36, "workclass": "Private", "fnlgt": 484024, "education": 1, "education-num": 9,
+    ({"age": 36, "workclass": "Private", "fnlgt": 484024, "education": 50, "education-num": 9,
       "marital-status": "Divorced", "occupation": "Machine-op-inspct", "relationship": "Unmarried", "race": "White",
       "sex": "Male", "capital-gain": 0, "capital-loss": 0, "hours-per-week": 40, "native-country": "United-States"}),
     ({"age": 36, "workclass": "Private", "fnlgt": 484024, "education": "HS-grad", "education-num": 9,
