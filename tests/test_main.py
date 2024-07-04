@@ -67,6 +67,6 @@ def test_predict_invalid_data(input_data):
 def test_predict_raises_exception():
     error_msg = "example error"
     with patch('main.inference', side_effect=Exception(error_msg)):
-        response = test_client.post("/predict", json=valid_test_cases[0])
+        response = test_client.post("/predict", json=valid_test_cases[0][0])
         assert response.status_code == 400
         assert response.json() == {"detail": error_msg}
